@@ -17,7 +17,7 @@
     {
       "id": 3,
       "message": "Installed new face to look at",
-      "attention": false,
+      "attention": true,
       "date": "02-02-2020",
       "tech": "Art Official"
     }
