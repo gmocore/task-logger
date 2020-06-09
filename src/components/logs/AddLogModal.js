@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import M from "materialize-css/dist/js/materialize.min.js";
 
 const AddLogModal = () => {
   const [message, setMessage] = useState("");
@@ -6,8 +7,12 @@ const AddLogModal = () => {
   const [tech, setTech] = useState("");
 
   const onSubmit = () => {
-      console.log(message, tech, attention)
-  }
+    if (message === "" || tech === "") {
+      M.toast({ html: "please enter a message and tech" });
+    } else {
+      console.log(message, tech, attention);
+    }
+  };
 
   return (
     <div id="add-log-modal" className="modal" style={modalStyle}>
@@ -52,7 +57,7 @@ const AddLogModal = () => {
                   className="filled-in"
                   checked={attention}
                   value={attention}
-                  onChange={e => setAttention(!attention)}
+                  onChange={(e) => setAttention(!attention)}
                 />
                 <span>Needs Attention</span>
               </label>
@@ -61,9 +66,13 @@ const AddLogModal = () => {
         </div>
       </div>
       <div className="modal-footer">
-          <a href="#!" onClick={onSubmit} className="modal-close waves-effect waves-green btn blue">
-              Enter
-          </a>
+        <a
+          href="#!"
+          onClick={onSubmit}
+          className="modal-close waves-effect waves-green btn blue"
+        >
+          Enter
+        </a>
       </div>
     </div>
   );
