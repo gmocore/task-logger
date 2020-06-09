@@ -1,0 +1,47 @@
+{
+  "logs": [
+    {
+      "id": 1,
+      "message": "Installed new hard drive to workstation 005",
+      "attention": false,
+      "date": "02-02-2020",
+      "tech": "Jonathon Chambers"
+    },
+    {
+      "id": 2,
+      "message": "workstation not posting",
+      "attention": false,
+      "date": "02-02-2020",
+      "tech": "Fred Micheal"
+    },
+    {
+      "id": 3,
+      "message": "Installed new face to look at",
+      "attention": false,
+      "date": "02-02-2020",
+      "tech": "Art Official"
+    }
+  ],
+  "techs": [
+    {
+      "id": 1,
+      "firstname": "Jonathon",
+      "lastname": "Chambers"
+    },
+    {
+      "id": 2,
+      "firstname": "Fred",
+      "lastname": "Michael"
+    },
+    {
+      "id": 3,
+      "firstname": "Art",
+      "lastname": "Official"
+    },
+    {
+      "firstname": "Gerritt",
+      "lastname": "Black",
+      "id": 4
+    }
+  ]
+}
