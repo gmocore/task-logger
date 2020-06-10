@@ -25,22 +25,22 @@
   "techs": [
     {
       "id": 1,
-      "firstname": "Jonathon",
-      "lastname": "Chambers"
+      "firstName": "Jonathon",
+      "lastName": "Chambers"
     },
     {
       "id": 2,
-      "firstname": "Fred",
-      "lastname": "Michael"
+      "firstName": "Fred",
+      "lastName": "Michael"
     },
     {
       "id": 3,
-      "firstname": "Art",
-      "lastname": "Official"
+      "firstName": "Art",
+      "lastName": "Official"
     },
     {
-      "firstname": "Gerritt",
-      "lastname": "Black",
+      "firstName": "Gerritt",
+      "lastName": "Black",
       "id": 4
     }
   ]

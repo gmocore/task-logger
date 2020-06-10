@@ -1,4 +1,5 @@
 import React, { useState, useEffect} from 'react'
+import TechItem from './TechItem';
 
 
 const TechListModal = () => {
@@ -16,9 +17,6 @@ const TechListModal = () => {
         setLoading(false)
     }
 
-    if (loading) {
-        return <PreLoader />
-    }
 
     return (
         <div id="tech-list-modal" className="modal">
@@ -26,7 +24,7 @@ const TechListModal = () => {
                 <h4>Technician List</h4>
                 <ul className="collection">
                     {!loading && techs.map(tech => 
-                        <li className="collection-item">{tech.firstName}</li>
+                        <TechItem tech={tech} key={tech.id} />
                     )}
                 </ul>
             </div>
