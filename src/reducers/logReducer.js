@@ -14,7 +14,18 @@ export default (state = initialState, action) => {
                 ...state,
                 loading: true
             };
-            break;
+        case LOGS_ERROR:
+            console.error(action.payload)
+            return {
+                ...state,
+                error: action.payload
+            }
+        case GET_LOGS:
+            return {
+                ...state,
+                logs: action.payload,
+                loading: false
+            }
     
         default:
             return state;
