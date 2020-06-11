@@ -5,12 +5,12 @@ import PreLoader from '../layout/PreLoader';
 import PropTypes from 'prop-types';
 import { getLogs } from '../../actions/logActions'
 
-const Logs = ({ log: { logs, loading } }) => {
+const Logs = ({ log: { logs, loading }, getLogs }) => {
 
     useEffect(() => {getLogs()}, [])
 
 
-    if (loading) {
+    if (loading || logs === null) {
         return <PreLoader />
     }
 
