@@ -7,7 +7,7 @@ import { getLogs } from '../../actions/logActions'
 
 const Logs = ({ log: { logs, loading }, getLogs }) => {
 
-    useEffect(() => {getLogs()}, [])
+    useEffect(() => {getLogs()}, [getLogs])
 
 
     if (loading || logs === null) {
@@ -30,7 +30,8 @@ const Logs = ({ log: { logs, loading }, getLogs }) => {
 }
 
 Logs.propTypes = {
-    log: PropTypes.object.isRequired
+    log: PropTypes.object.isRequired,
+    getLogs: PropTypes.func.isRequired
 }
 
 const mapStateToProps = (state) => ({

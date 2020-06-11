@@ -1,25 +1,18 @@
 {
   "logs": [
     {
-      "id": 1,
-      "message": "Installed new hard drive to workstation 005",
-      "attention": false,
-      "date": "02-02-2020",
-      "tech": "Jonathon Chambers"
-    },
-    {
-      "id": 2,
-      "message": "workstation not posting",
-      "attention": false,
-      "date": "02-02-2020",
-      "tech": "Fred Micheal"
-    },
-    {
-      "id": 3,
-      "message": "Installed new face to look at",
+      "message": "red log",
       "attention": true,
-      "date": "02-02-2020",
-      "tech": "Art Official"
+      "tech": "Art Official",
+      "date": "2020-06-11T15:53:37.287Z",
+      "id": 8
+    },
+    {
+      "id": 9,
+      "message": "hard drive failed on 002",
+      "attention": false,
+      "tech": "Fred Michael",
+      "date": "2020-06-11T16:48:01.084Z"
     }
   ],
   "techs": [
